@@ -7,7 +7,7 @@ import AppShell from '@/components/AppShell';
 import { SMEStatusBadge, KYCBadge, HealthScore } from '@/components/Badges';
 import { mockTickets, getActivitiesBySME, getSMEById, formatFCFA, getUserById } from '@/lib/mockData';
 import { StatusBadge, PriorityBadge } from '@/components/Badges';
-import { Phone, MapPin, Mail, Calendar, Activity, FileText, CheckIn, User as UserIcon } from 'lucide-react';
+import { Phone, MapPin, Mail, Calendar, Activity, FileText, User as UserIcon } from 'lucide-react';
 
 export default function SMEProfilePage() {
   const { user } = useAuth();

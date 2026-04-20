@@ -239,7 +239,7 @@ export default function AdminPage() {
             <div className="card p-6">
               <h3 className="font-bold text-base mb-4 flex items-center gap-2" style={{ color: 'var(--text-primary)' }}><Trophy className="text-blue-500" size={18} /> Top Agents Support</h3>
               <div className="space-y-3">
-                {mockUsers.filter(u => u.role === 'Support').map(u => ({ user: u, score: mockTickets.filter(t => t.assignedAgentId === u.id && t.status === 'Resolved').length })).sort((a, b) => b.score - a.score).map((board, i) => (
+                {mockUsers.filter(u => u.role === 'Support').map(u => ({ user: u, score: mockTickets.filter(t => t.assignedAgentId === u.id && t.status === 'Résolu').length })).sort((a, b) => b.score - a.score).map((board, i) => (
                   <div key={board.user.id} className="flex items-center gap-3 p-3 rounded-lg border" style={{ borderColor: 'var(--border)' }}>
                     <div className="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-500/20 text-blue-600 flex items-center justify-center font-bold text-xs">{board.user.avatar}</div>
                     <div className="flex-1">
